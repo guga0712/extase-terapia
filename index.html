@@ -22,16 +22,17 @@
         <a id="logo" href="#s1"><img src="./assets/logos/logo.png" alt=""></a>
         <nav id="nav">
             <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
-                aria-expanded="false">Menu
+                aria-expanded="false">
                 <span id="hamburger"></span>
             </button>
             <ul id="menu" role="menu">
-                <li><a id="aboutButton" href="#s2">Sobre nós</a></li>
-                <li><a id="productsButton" href="#s3">Produtos</a></li>
-                <li><a id="contactButton" href="#s4">Contato</a></li>
+                <li><a id="aboutButton" href="#aboutUs">Sobre nós</a></li>
+                <li><a id="massagesButton" href="#ourMassages">Massages</a></li>
+                <li><a id="massagistsButton" href="#ourMassagists">Massagistas</a></li>
             </ul>
         </nav>
     </header>
+    <div class="whatsappButton"></div>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -65,14 +66,57 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div class="s1">
-        <div class="s1Content" data-aos="fade-up">
-            <h1>Hello world</h1>
+    <div class="aboutUs" id="aboutUs">
+        <div class="aboutUsContent" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <h1 class="titles">Sobre a Êxtase</h1>
+            <div class="subtitle"></div>
+            <p>Bem-vindo à nossa exclusiva casa de massagem tântrica, onde você é convidado a mergulhar em uma jornada
+                de autodescoberta e prazer profundo. Nossos terapeutas altamente treinados estão comprometidos em criar
+                um ambiente seguro e respeitoso, onde você pode se sentir completamente à vontade para explorar sua
+                sensualidade e expandir sua consciência.
+                </br></br>
+                Em nossas sessões de massagem tântrica, combinamos técnicas antigas com abordagens modernas para
+                oferecer uma experiência holística e transformadora. Cada toque é executado com intenção, acariciando
+                suavemente seu corpo e despertando sensações até então desconhecidas. Nossa equipe está dedicada a
+                ajudar você a liberar bloqueios energéticos, revitalizar seu sistema e nutrir sua vitalidade.
+                </br></br>
+                Nossa casa de massagem tântrica é um refúgio acolhedor e luxuoso, projetado para proporcionar uma
+                experiência única de relaxamento e rejuvenescimento. Reserve um tempo para se cuidar, nutrir sua energia
+                vital e despertar seu potencial interior. Permita-se experimentar a beleza e a magia do tantra em um
+                ambiente discreto, onde o respeito e a confidencialidade são nossas prioridades. Estamos ansiosos para
+                recebê-lo e guiá-lo em sua jornada de descoberta pessoal.</p>
         </div>
     </div>
-    <div class="s1">
-
+    <div class="ourMassages" id="ourMassages">
+        <div class="ourMassagesContent" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <h1 class="titles">Nossas massagens</h1>
+            <div class="subtitle"></div>
+            <p>Explore uma variedade de técnicas de massagem executadas por talentosas terapeutas, cuja beleza encanta
+                os
+                sentidos. Deixe-se envolver por sensações intensas de relaxamento e prazer, enquanto nossas experientes
+                massagistas cuidam do seu bem-estar. Não perca a oportunidade de experimentar essa experiência única!
+            </p>
+        </div>
     </div>
+    <div class="ourMassagists" id="ourMassagists">
+        <div class="ourMassagistsContent" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <h1 class="invertedTitles">Nossas massagistas</h1>
+            <div class="invertedSubtitle"></div>
+            <p>Nossas massagistas são artistas do toque, selecionadas pela habilidade técnica e sensibilidade. Com sua
+                beleza interior e exterior, elas conduzem você em uma jornada sensorial de relaxamento e prazer,
+                proporcionando momentos de pura felicidade e bem-estar.</p>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="contactContent" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <h1 class="titles">Entre em contato</h1>
+            <p>Para aqueles que desejam experimentar uma massagem excepcional, convidamos vocês a entrarem em contato
+                conosco. Descubra o poder do toque terapêutico e reserve agora mesmo sua sessão de relaxamento e
+                renovação.</p>
+        </div>
+    </div>
+
+
 
     <script src="menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -80,6 +124,5 @@
         AOS.init();
     </script>
 </body>
-
 
 </html>

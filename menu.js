@@ -1,7 +1,7 @@
 const btnMobile = document.getElementById('btn-mobile');
 const aboutUs = document.getElementById('aboutButton');
-const product = document.getElementById('productsButton');
-const costumer = document.getElementById('costumerButton');
+const massages = document.getElementById('massagesButton');
+const massagists = document.getElementById('massagistsButton');
 const contact = document.getElementById('contactButton');
 
 function toggleMenu(event) {
@@ -19,6 +19,6 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 aboutUs.addEventListener('click', toggleMenu);
-product.addEventListener('click', toggleMenu);
-costumer.addEventListener('click', toggleMenu);
+massages.addEventListener('click', toggleMenu);
+massagists.addEventListener('click', toggleMenu);
 contact.addEventListener('click', toggleMenu);

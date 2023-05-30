@@ -9,11 +9,19 @@
     src: url('./fonts/Thei.otf');
 }
 
+::selection {
+    color: white;
+    background-color: var(--red-800);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0px;
     padding: 0px;
     font-family: 'Quicksand';
-
 }
 
 #menu a {
@@ -27,6 +35,7 @@
 
 #header {
     box-sizing: border-box;
+    font-size: 20px;
     height: 100px;
     padding: 0 100px;
     display: flex;
@@ -40,7 +49,7 @@
 #menu {
     display: flex;
     list-style: none;
-    gap: 0.5rem;
+    gap: 5rem;
 
 }
 
@@ -53,23 +62,74 @@
     display: none;
 }
 
-.s1 {
+.titles {
+    font-family: theifont;
+    font-size: 80px;
+    margin: 0;
+    color: var(--red-800);
+}
+
+
+.invertedTitles {
+    font-family: theifont;
+    font-size: 80px;
+    margin: 0;
+    color: white;
+}
+
+
+.aboutUs,
+.ourMassages,
+.ourMassagists,
+.contact {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.s1Content {
+    margin-bottom: 40px;
     color: black;
-    padding: 0 100px;
-    border: 1px solid red;
+
 }
 
-.title {
-    font-family: theifont;
+.ourMassagists {
+    background-color: var(--red-800);
+    color: white;
 }
+
+.aboutUsContent,
+.ourMassagesContent,
+.ourMassagistsContent,
+.contactContent {
+    padding: 0 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.subtitle {
+    width: 50px;
+    border-bottom: 2px solid var(--red-800);
+    margin-top: -20px;
+}
+
+.invertedSubtitle {
+    width: 50px;
+    border-bottom: 2px solid white;
+    margin-top: -20px;
+}
+
+.aboutUsContent p,
+.ourMassagesContent p,
+.ourMassagistsContent p,
+.contactContent p {
+    font-size: 20px;
+    margin: 0;
+}
+
+
 
 
 @media (max-width: 1100px) {
@@ -84,7 +144,7 @@
         width: 100%;
         top: 100px;
         right: 0px;
-        background: var(--marrom);
+        background: white;
         transition: 0.6s;
         z-index: 1000;
         height: 0px;
@@ -102,14 +162,15 @@
         text-align: center;
         padding: 2rem 0;
         margin: 0 2rem;
-        border-bottom: 1px solid var(--bege);
+        border-bottom: 1px solid var(--red-800);
+        font-size: 20px;
     }
 
     #btn-mobile {
         color: var(--bege);
         display: flex;
         padding: 0.5rem 0rem;
-        font-size: 1rem;
+        font-size: 1.5rem;
         border: none;
         background: none;
         cursor: pointer;
@@ -144,5 +205,28 @@
     #nav.active #hamburger::after {
         transform: rotate(-135deg);
         top: -7px;
+    }
+
+    .titles,
+    .invertedTitles {
+        font-size: 60px;
+        margin-top: 20px;
+    }
+
+    .aboutUs {
+        height: 100%;
+    }
+
+    .ourMassages,
+    .ourMassagists,
+    .contact {
+        height: 100vh;
+    }
+
+    .aboutUsContent,
+    .ourMassagesContent,
+    .ourMassagistsContent,
+    .contactContent {
+        padding: 0 2rem;
     }
 }

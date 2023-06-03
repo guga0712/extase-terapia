@@ -156,15 +156,117 @@ html {
     margin: 0;
 }
 
-footer {
+.massages {
+    display: flex;
+    gap: 40px;
+}
+
+.massage h2 {
+    color: var(--red-800);
+    font-family: theifont;
+    font-size: 60px;
+}
+
+.massage img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.massage p {
+    margin-top: 10px;
+    font-size: 15px;
+    width: 300px;
+    color: #969696;
+}
+
+.ctaMassage {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.ctaMassage a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--red-800);
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+}
+
+.ctaMassage a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
     padding: 0 100px;
     background-color: var(--red-800);
     height: 200px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
+    flex-direction: row;
     color: white;
+}
+
+.logoFooter img {
+    width: 200px;
+}
+
+.siteMap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+}
+
+.siteMap a {
+    text-decoration: none;
+    color: white;
+}
+
+.siteMap a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.aboutBusiness {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.businessHours,
+.businessAddress {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+}
+
+.businessHours p,
+.businessAddress p {
+    margin: 0;
+}
+
+.businessHours p:last-child,
+.businessAddress p:last-child {
+    font-size: 15px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: #6B07D2;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #6B07D2;
 }
 
 
@@ -265,7 +367,6 @@ footer {
         height: 100%;
     }
 
-    .ourMassages,
     .ourMassagists,
     .contact {
         height: 100vh;
@@ -276,5 +377,24 @@ footer {
     .ourMassagistsContent,
     .contactContent {
         padding: 0 2rem;
+    }
+
+    .ourMassages {
+        height: 100%;
+    }
+
+    .massages {
+        flex-direction: column;
+    }
+
+    .footer {
+        padding: 20px 0;
+        flex-direction: column;
+        height: 100%;
+        gap: 40px;
+    }
+
+    .aboutBusiness {
+        gap: 10px;
     }
 }

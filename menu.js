@@ -22,3 +22,8 @@ aboutUs.addEventListener('click', toggleMenu);
 massages.addEventListener('click', toggleMenu);
 massagists.addEventListener('click', toggleMenu);
 contact.addEventListener('click', toggleMenu);
+
+function hashHandler() {
+    window.history.pushState({}, '', '/');
+}
+window.addEventListener('hashchange', hashHandler, false);

@@ -2,6 +2,7 @@
     --red-200: #FF756E;
     --red-500: #FF2C21;
     --red-800: #801611;
+    /* --red-800: rgb(202, 120, 213) */
 }
 
 @font-face {
@@ -62,6 +63,10 @@ html {
     display: none;
 }
 
+#myCarouselMobile {
+    display: none;
+}
+
 .whatsappButton {
     right: 100px;
     bottom: 50px;
@@ -115,7 +120,7 @@ html {
 }
 
 .aboutUs {
-    height: 100%;
+    height: 110%;
     padding-top: 50px;
 }
 
@@ -134,6 +139,14 @@ html {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+}
+
+.ourMassagists {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    height: 100%;
+    padding: 10px 0;
 }
 
 .subtitle {
@@ -194,9 +207,70 @@ html {
     font-size: 18px;
 }
 
-.ctaMassage a:hover {
+.ctaMassage a:hover,
+.ctaMassage a:focus,
+.ctaMassage a:active {
     text-decoration: none;
     color: white;
+}
+
+.massagists {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.massagist {
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#massagistsCarouselLast {
+    display: flex;
+    justify-content: center;
+}
+
+.massagistInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.massagistInfo h2 {
+    margin: 10px 0 0 0;
+    color: white;
+}
+
+.dividerMassagist {
+    width: 50px;
+    margin: 10px 0 20px 0;
+    border-bottom: 2px solid white;
+}
+
+.ctaMassagist {
+    padding: 10px 30px;
+    background-color: white;
+    color: var(--red-800);
+    border-radius: 50px;
+    font-size: 18px;
+    width: 300px;
+}
+
+.ctaMassagist:hover {
+    text-decoration: none;
+    color: var(--red-800);
+}
+
+.modelo {
+    width: 300px;
+    height: 500px;
 }
 
 .footer {
@@ -208,6 +282,13 @@ html {
     justify-content: space-between;
     flex-direction: row;
     color: white;
+}
+
+.logoFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .logoFooter img {
@@ -224,6 +305,7 @@ html {
 .siteMap a {
     text-decoration: none;
     color: white;
+    font-size: 15px;
 }
 
 .siteMap a:hover {
@@ -246,13 +328,16 @@ html {
 }
 
 .businessHours p,
+.siteMap p,
 .businessAddress p {
     margin: 0;
+    font-weight: 600;
 }
 
 .businessHours p:last-child,
 .businessAddress p:last-child {
     font-size: 15px;
+    font-weight: 300;
 }
 
 footer {
@@ -269,10 +354,27 @@ footer a:hover {
     color: #6B07D2;
 }
 
+footer p {
+    margin: 0;
+}
+
 
 
 
 @media (max-width: 1100px) {
+
+    #myCarousel {
+        display: none;
+    }
+
+    #myCarouselMobile {
+        display: block;
+    }
+
+    .bannerMobile {
+        display: block;
+    }
+
     #logo img {
         width: 100px;
     }
@@ -372,6 +474,15 @@ footer a:hover {
         height: 100vh;
     }
 
+    .ourMassagists {
+        height: 100%
+    }
+
+    .massagists {
+        flex-direction: column;
+    }
+
+
     .aboutUsContent,
     .ourMassagesContent,
     .ourMassagistsContent,
@@ -385,13 +496,15 @@ footer a:hover {
 
     .massages {
         flex-direction: column;
+        gap: 0px;
     }
+
 
     .footer {
         padding: 20px 0;
         flex-direction: column;
         height: 100%;
-        gap: 40px;
+        gap: 60px;
     }
 
     .aboutBusiness {
